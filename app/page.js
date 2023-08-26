@@ -40,7 +40,7 @@ export default async function Home() {
         <div className="p-2 col-span-12 sm:col-span-4 md:col-span-4 lg:col-span-4 w-full">
           {second_latest.map((blog, index) => {
             return (
-              <div className="pt-2">
+              <div className="pt-2" key={index.toString()}>
                 <div className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
                   <Link
                     href={`/blog/details/${blog.id}`}
