@@ -1,4 +1,4 @@
-import GoBack from "@/app/components/GoBack";
+import GoBack from "@/app/components/Goback";
 import Details from "@/app/components/blog/Details";
 import getPostDetails from "@/utils/getPostDetails";
 import getNewest from "@/utils/getNewest";
@@ -9,9 +9,6 @@ const page = async ({ params }) => {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between bg-gray-100">
-      {/* <h1 className="font-semibold text-center pt-[100px]">
-        এটি বিস্তারিত সেকশন
-      </h1> */}
       <Details blog={blog.postDetails} />
       <GoBack />
     </main>
