@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: "build",
   images: {
     domains: ["basic-blog.teamrabbil.com", "roar.media"],
   },
